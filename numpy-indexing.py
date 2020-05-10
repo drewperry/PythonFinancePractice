@@ -23,7 +23,7 @@ arr_copy[:] = 99
 # mat[row, col]
 # mat[row][col]
 
-mat = np.array([5, 10, 15], [20, 25, 30], [35, 40, 45])
+mat = np.array([5, 10, 15], [20, 25, 30]);
 first_row = mat[0]
 mid_index = mat[1][1]  # Gets middle array
 mid_index = mat[1, 1]  # Also gets middle array
@@ -44,3 +44,4 @@ great_four = arr[bool_arr]
 # QUICKER STEP
 easier_bool = arr[arr > 4]
 
+another_bool = arr[arr % 2 > 1];
