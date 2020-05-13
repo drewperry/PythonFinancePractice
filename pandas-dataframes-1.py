@@ -41,3 +41,16 @@ df.loc['B', 'Y']
 
 # Returns A,W B,W and A,Y B,Y
 df.loc[['A', 'B'], ['W','Y']]
+
+booldf = df > 0
+df[booldf]
+
+df[df > 0]
+
+# Won't get NaN
+resultdf = df[df['W']>0]
+resultdf['X']
+
+result = df[df['W'>0]]['X']
+
+df[df['W'>0]][['Y','X']]
