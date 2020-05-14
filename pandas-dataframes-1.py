@@ -51,6 +51,20 @@ df[df > 0]
 resultdf = df[df['W']>0]
 resultdf['X']
 
-result = df[df['W'>0]]['X']
+result = df[df['W']>0]['X']
 
-df[df['W'>0]][['Y','X']]
+
+# Multiple conditions for series
+# Must use & and not 'and'
+print(df.reset_index())
+
+# Easy way to create a list
+newind = 'CA NY WY OR'.split()
+
+# makes new column states
+df['States'] = newind
+
+# Sets new index as states
+print(df.set_index('States'))
+
+
