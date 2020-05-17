@@ -8,7 +8,7 @@ import matplotlib.dates as mdates
 
 style.use('ggplot')
 
-df = pd.read_csv('aapl.csv', parse_dates=True, index_col=0)
+df = pd.read_csv('../aapl.csv', parse_dates=True, index_col=0)
 
 # Can resample to D, Min, S, etc
 # Significantly shrinks size of data set

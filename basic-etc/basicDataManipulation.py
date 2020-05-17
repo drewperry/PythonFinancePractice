@@ -6,7 +6,7 @@ import pandas_datareader.data as web
 
 style.use('ggplot')
 
-df = pd.read_csv('aapl.csv', parse_dates=True, index_col=0)
+df = pd.read_csv('../aapl.csv', parse_dates=True, index_col=0)
 
 # Not only can you access columns
 # But you can also create your own

@@ -16,7 +16,7 @@ df.to_csv('aapl.csv')
 
 # Reads in csv and prints
 # You can read json, sql, etc
-df2 = pd.read_csv('aapl.csv', parse_dates=True, index_col=0)
+df2 = pd.read_csv('../aapl.csv', parse_dates=True, index_col=0)
 print(df2.head())
 
 print(df[['Open', 'High']])
